@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Diabetes details Form</title>
+    <link href="{{ url_for('static', filename='css/style.css') }} " rel="stylesheet">  </head>
+  <body>
+    <div class="center">
+      <h1>Fill details</h1>
+      <form action="/predict" method="post">
+        <div class="txt_field">
+          <input type="number" name="pregnancies">
+          <span></span>
+          <label>Number of pregnancies</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" step="any" name="glucose">
+          <span></span>
+          <label>Glucose</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" step="any" name="BP">
+          <span></span>
+          <label>Blood Pressure</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" step="any" name="insulin">
+          <span></span>
+          <label>Insulin</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" step="any" name="BMI">
+          <span></span>
+          <label>BMI</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" name="age">
+          <span></span>
+          <label>Age</label>
+        </div>
+        <input type="submit" value="Submit">
+        <div class="txt_field"></div>
+      </form>
+    </div>
+
+  </body>
+</html>
